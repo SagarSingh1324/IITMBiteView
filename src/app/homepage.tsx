@@ -17,7 +17,7 @@ export default function Homepage()
 {
   
   return (
-    <div className='flex flex-col p-10 gap-10 items-center justify-center min-h-screen bg-cover bg-center bg-fixed'  style={{ backgroundImage: "url('/bgImage.jpg')" }}>
+    <div className='flex flex-col p-10 gap-10 items-center justify-center min-h-screen bg-cover bg-center bg-fixed'  style={{ backgroundImage: "url('/IITMBiteView/bgImage.jpg')" }}>
 
       <div className='w-full max-w-md text-center'> 
         <h1 className='text-3xl font-extrabold text-gray-800'> Welcome, choose your mess: </h1>
