@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/IITMBiteView',
-    trailingSlash: true,
-    output: 'export'
-};
-
-export default nextConfig;
+    output: 'export', // Enables static export mode
+    basePath: '/IITMBiteView', // Optional, for GitHub Pages
+    trailingSlash: true, // Optional, for consistent routing
+  };
+  
+  export default nextConfig;
+  
