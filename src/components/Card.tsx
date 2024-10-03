@@ -2,7 +2,6 @@
 
 'use client'
 
-import { useState } from 'react';
 import messdata from '../messdata/messdata';
 //import Macros from '@/app/macros/page';
 
@@ -71,12 +70,12 @@ export default function Card(props: {data:buttonDataProps}) {
     else
     {
   
-      let var1 = props.data.messTypeIf as keyof typeof messdata;
-      let var2 = props.data.messRegionIf as string;
-      let var3 = props.data.messWeekIf as string;
-      let var4 = (var2+'_menu_'+var3) as keyof typeof messdata.veg;
-      let var5 = currentDay as keyof typeof messdata.veg.north_menu_odd;
-      let var6 = getNextMealType() as keyof typeof messdata.veg.north_menu_odd.Saturday;
+      const var1 = props.data.messTypeIf as keyof typeof messdata;
+      const var2 = props.data.messRegionIf as string;
+      const var3 = props.data.messWeekIf as string;
+      const var4 = (var2+'_menu_'+var3) as keyof typeof messdata.veg;
+      const var5 = currentDay as keyof typeof messdata.veg.north_menu_odd;
+      const var6 = getNextMealType() as keyof typeof messdata.veg.north_menu_odd.Saturday;
   
       return messdata[var1][var4][var5][var6];
   
